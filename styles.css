@@ -1,0 +1,86 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #15181b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 30px;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e96c1e;
+  height: 5px;
+  width: 130px;
+  border-radius: 1em;
+}
+.footer-col a {
+  color: white;
+  transition: 0.3s ease;
+  opacity: 0.8;
+}
+.footer-col a:hover:not(.socials a) {
+  padding-left: 10px;
+  opacity: 1;
+}
+.footer-col .socials {
+  display: inline-block;
+  font-size: 24px;
+}
+.footer-col .socials a {
+  margin-left: 3px;
+}
+.footer-col .socials i:hover {
+  transition: 0.3s ease;
+  transform: scale(1.2) translateY(-5px);
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 5px;
+}
+@media(max-width:767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width:574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
